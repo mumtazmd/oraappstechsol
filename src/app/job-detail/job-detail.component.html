@@ -1,0 +1,123 @@
+<section class="banner-section" *ngIf="job">
+    <div class="container">
+    <div class="job-position-banner-text-wrap">
+    <h1 class="text-white job-position-banner">{{ job.title }}</h1>
+    <div class="publication-details-wrapper">
+        <div class="job-position-banner-details-wrap">
+            <p><i class="fa-solid fa-location-dot text-white"></i></p>
+            <div class="white-banner-text">{{ job.location }}</div>
+        </div>
+        <div class="job-position-banner-details-wrap">
+            <p><i class="fa-solid fa-house-laptop text-white"></i></p>
+            <div class="white-banner-text">{{ job.type }}</div>
+        </div>
+        <div class="job-position-banner-details-wrap">
+            <p><i class="fa-solid fa-house-laptop text-white"></i></p>
+            <div class="white-banner-text">{{ job.experience }}</div>
+        </div>
+    </div>
+    <div *ngIf="showForm">
+      <h3>Application Form</h3>
+      <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Your Name" required />
+        
+        <label>Email:</label>
+        <input type="email" placeholder="Your Email" required />
+        
+        <label>Resume:</label>
+        <input type="file" required />
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="job-details-grid bg-white">
+        <div class="job-details-grid-cell">
+            <div class="job-detail-title">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p class="paragraph-large"><strong>Type:</strong> {{ job.type }}</p>
+            </div>
+            <p class="paragraph-large">Full-Time</p>
+        </div>
+        <div class="job-details-grid-cell">
+            <div class="job-detail-title">
+                <i class="fa-solid fa-clock"></i>
+                <p class="paragraph-large"><strong>Working hours:</strong> {{ job.type }}</p>
+            </div>
+            <p class="paragraph-large">10:00 am - 07:00 pm</p>
+        </div>
+        <div class="job-details-grid-cell">
+            <div class="job-detail-title">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="paragraph-large"><strong>Hiring location:</strong> </p>
+            </div>
+            <p class="paragraph-large">Hyderabad, India</p>
+        </div>
+        <div class="job-details-grid-cell">
+            <div class="job-detail-title">
+                <i class="fa-solid fa-business-time"></i>
+                <p class="paragraph-large"><strong>Experience:</strong></p>
+            </div>
+            <p class="paragraph-large">3 Year</p>
+        </div>
+        <div>
+            <button class="primary-button" (click)="showApplicationForm()">Apply Now</button>
+        </div> 
+    </div>   
+    
+</div>
+</div>
+</section>
+<section class="section job-position-section">
+    <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1>Job Description:</h1>
+                        <p>As a Digital Marketing Specialist, you will be responsible for planning, executing, and optimizing our digital marketing campaigns. You will work closely with the marketing team to ensure our online efforts align with our overall marketing strategy and business goals.</p>
+                        <h2>Key Responsibilities:</h2>
+                        <ul>
+                            <li>Conduct keyword research and optimize website content for search engines (SEO).</li>
+                            <li>Analyze and report on the performance of digital marketing campaigns, providing insights and recommendations for improvement.</li>
+                            <li>Manage and optimize pay-per-click (PPC) campaigns on platforms such as Google Ads and social media.</li>
+                            <li>Create and curate engaging content for our website, blog, social media, and email newsletters.</li>
+                            <li>Monitor social media channels, engage with followers, and respond to inquiries in a timely manner.</li>
+                            <li>Collaborate with the design team to create visually appealing and effective marketing materials.</li>
+                        </ul>
+                        <h2>Qualifications:</h2>
+                        <ul>
+                            <li>Bachelor’s degree in Marketing, Communications, or a related field.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sidebar-job-wrapper">
+                         <div class="job-position-sidebar-wrapper">
+                            <div class="job-position-sidebar-wrap with-bp">
+                                <a class="o-inline-block" href="#">
+                                    <img class="img-fluid company-logo" src="assets/images/oraappstech-symbol-logo.png" alt="Oraappstech" />
+                                </a>
+                                <a class="company-contact-link" href="#">
+                                    OraAppsTech
+                                </a>
+                            </div>
+                            <p>Founded in 2010, OraAppsTechSol is a dynamic technology company committed to innovation and excellence.</p>
+                            <div class="job-position-sidebar-wrap">
+                                <p class="job-position-icon"><i class="fa-solid fa-phone"></i></p>
+                                <a href="#" class="company-contact-link">+91 63033 22050</a>
+                            </div>
+                            <div class="job-position-sidebar-wrap">
+                                <p class="job-position-icon"><i class="fa-solid fa-location-dot"></i></p>
+                                <a href="#" class="company-contact-link">Hyderabad, India</a>
+                            </div>
+                            <div class="job-position-sidebar-wrap">
+                                <p class="job-position-icon"><i class="fa-solid fa-envelope"></i></p>
+                                <a href="mailto:info@oraappstechsol.com" class="company-contact-link">info&#64;oraappstechsol.com</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+  

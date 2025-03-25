@@ -1,0 +1,124 @@
+<p>Contact Us Page</p>
+<main>
+    <img src="assets/images/contact-us-bnr.jpg" class="img-fluid" alt="About Banner">
+    <div class="container mt-5">
+        <h1 class="lt-blue-c mt-5 mb-4">Contact Us</h1>
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-once="true" data-aos-anchor-placement="center-bottom"
+                data-aos-duration="2000">
+                <img src="assets/images/contact-us.jpg" alt="Contact Us Image" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-once="true" data-aos-anchor-placement="center-bottom"
+                data-aos-duration="2000">
+                <div class="card form-data">
+                    <div class="card-body px-lg-5 py-lg-4">
+
+                        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                            <!-- Name Field -->
+                            <div class="form-group">
+                              <input type="text" class="form-control form-control-lg" 
+                                     name="name" id="name" placeholder="Your Name"
+                                     formControlName="name">
+                              <div *ngIf="submitted && contactForm.controls['name'].errors" class="validate text-danger">
+                                Name is required
+                              </div>
+                            </div>
+                          
+                            <!-- Email Field -->
+                            <div class="form-group mt-3">
+                              <input type="email" class="form-control form-control-lg" 
+                                     name="email" id="email" placeholder="Your Email"
+                                     formControlName="email">
+                              <div *ngIf="submitted && contactForm.controls['email'].errors" class="validate text-danger">
+                                <div *ngIf="contactForm.controls['email'].errors?.['required']">Email is required</div>
+                                <div *ngIf="contactForm.controls['email'].errors?.['email']">Invalid email format</div>
+                              </div>
+                            </div>
+                          
+                            <!-- Subject Field -->
+                            <div class="form-group mt-3">
+                              <input type="text" class="form-control form-control-lg" 
+                                     name="subject" id="subject" placeholder="Subject"
+                                     formControlName="subject">
+                              <div *ngIf="submitted && contactForm.controls['subject'].errors" class="validate text-danger">
+                                Subject is required
+                              </div>
+                            </div>
+                          
+                            <!-- Message Field -->
+                            <div class="form-group mt-3">
+                              <textarea class="form-control" name="message" rows="5" 
+                                        placeholder="Message" formControlName="message"></textarea>
+                              <div *ngIf="submitted && contactForm.controls['message'].errors" class="validate text-danger">
+                                Message is required
+                              </div>
+                            </div>
+                          
+                            <div class="text-center mt-3">
+                              <button type="submit" class="form-button">Send Message</button>
+                            </div>
+                          </form>
+
+                          
+
+                        <!-- <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" name="name" id="name"
+                                    placeholder="Your Name" formControlName="name" required>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="email" class="form-control form-control-lg" name="email" id="email"
+                                    placeholder="Your Email" formControlName="email" required>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control form-control-lg" name="subject" id="subject"
+                                    placeholder="Subject" formControlName="subject" required>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                formControlName="message" required></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="submit" class="form-button" [disabled]="contactForm.invalid">Send Message</button>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row mt-5" data-aos="fade-down" data-aos-once="true" data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000">
+            <div class="card col-md-6 col-lg-4 text-center mb-4">
+                <i class="fa-solid fa-location-dotv fa-3x mt-3"></i>
+                <h3 class="lt-blue-c">Reach Us <i class="fa-solid fa-location-dot"></i></h3>
+                <p>
+                    C 206, 2nd Floor, Business Park, US, CANADA, UK
+                </p>
+                <hr>
+                <p>
+                    Flat No 51, Hi-rise homes phase-2 Road No-1; Vasant Nagar Colony, Nizampet HYDERABAD, Telangana 500090 India.
+                </p>
+            </div>
+            <div class="card col-md-6 col-lg-4 text-center mb-4">
+                <i class="fa-regular fa-envelope fa-3x mt-5" style="color: #366cc9;"></i>
+                <h4 class="lt-blue-c mt-4">Email Us</h4>
+                
+                <a class="text-decoration-none text-dark" href="mailto:sales@dotobricks.online">info&#64;oraappstech.com</a>
+            </div>
+            <div class="card col-md-6 col-lg-4 text-center mb-4">
+                <!-- <i class="fa-solid fa-mobile-button fa-3x mt-5" style="color: #366cc9;"></i> -->
+                 <div class="contactus-wrap">
+                 <i class="fa-brands fa-whatsapp mt-5" style="color: #366cc9; font-size: 2.8rem;"></i>
+                <i class="fa-solid fa-phone fa-3x mt-5" style="color: #366cc9; font-size: 2.8rem; margin-left:20px"></i>
+                </div>
+                <h4 class="lt-blue-c mt-4">Call Us</h4>
+                <h4 class="base-h3">+91 63033 22050</h4>
+            </div>
+        </div>
+    </div>
+</main>

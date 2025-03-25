@@ -1,0 +1,119 @@
+
+
+<div class="top-strip" [ngClass]="{ sticky: isSticky }">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="top-title">
+          We consistently recruit on these technologies
+          <div class="marquee-container">
+            <div class="marquee-item">
+              <!-- <span>{{ technologies[currentIndex].name }}</span> -->
+              <a routerLink="/job-list">Apply</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-end">
+        <div class="approach-wrap">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="">
+                <p class="base-h4 mb-0">+91  63033 22050</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav
+  class="navbar navbar-expand-lg headerSection"
+  [ngClass]="{ sticky: isSticky }"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand custom-logo" href="#">
+      <img
+        src="assets/images/oraappstech-symbol-logo.png"
+        alt="oraappstech"
+        class="img-fluid symbol-logo"
+      />
+      <img
+        src="assets/images/oraappstech-tit-logo.png"
+        alt="oraappstech"
+        class="img-fluid title"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about-us">ABOUT </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="software-development"
+            >SOFTWARE DEVELOPMENT</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            routerLink="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            SERVICES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="ora-services/consulting-outsourcing"
+              >
+                Consulting & Outsourcing</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="ora-services/ux-ui-design"
+                >UI/UX Design</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="ora-services/trainings"
+                >Trainings</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="ora-services/proj-support"
+                >Project Support</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="ora-services/gen-ai"
+                >Gen AI Services</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact-us">CONTACT US </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

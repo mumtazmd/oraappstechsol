@@ -1,0 +1,304 @@
+<!-- <app-popup-modal></app-popup-modal> -->
+<div id="zoomCarousel" class="carousel slide mt-4-plus" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-content">
+          <div class="image-container">
+            <img src="assets/images/hero1.jpg" class="zoom-animation">
+          </div>
+          <div class="animated-text">
+            <span class="word">Transform</span>
+            <span class="word">Your</span>
+            <span class="word">Business</span>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-content">
+          <div class="image-container">
+            <img src="assets/images/hero2.jpg" class="zoom-animation">
+          </div>
+          <div class="animated-text">
+            <span class="word">Innovate</span>
+            <span class="word">With</span>
+            <span class="word">Confidence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#zoomCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#zoomCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- Daily Jobs section -->
+  <section class="container-fluid job-section-wrap pT-5 pB-5">
+    <div class="about-jobboard-wrapper">
+        <div class="left-content-wrapper">
+            <h6>Job Board – Your Gateway to a Better Career</h6>
+            <h2>Find the Right Job with Insights That Matter</h2>
+                <p>Take the next step toward your dream career with our Job Board. Get a personalized salary estimate based on your skills and experience, helping you make informed decisions. Explore detailed company reviews and insights from professionals across various industries. With access to thousands of company ratings, you can find the perfect workplace that aligns with your career goals. Start your journey today and make confident career choices!</p>
+               
+        </div>
+        <div class="home-jobs-wrapper">
+            <div class="wrapper-with-link">
+                <h5 class="grey-title border border-0 text-white">Jobs</h5>
+                <a href="/jobs-listing" class="link text-white text-decoration-none">All Jobs</a>
+            </div>
+            <div class="jobs-list-wrapper">
+                <div class="jobs-collection-wrap">
+                    <div class="right-jobs-collection-wrapper">
+                        <section class="w-100">
+                            <section>
+                                <div class="job-slider">
+                                  <div class="job-track">
+                                    <div *ngFor="let job of jobs" class="about-positon-wrapper">
+                                      <div class="position-wrap">
+                                        <div class="job-title">{{ job.title }}</div>
+                                        <div class="location-type-wrapper wrap">
+                                          <div class="location-item-wrap">
+                                            <i class="fa-solid fa-globe"></i>
+                                            <p class="jobs-paragraph">{{ job.location }}</p>
+                                          </div>
+                                          <div class="location-item-wrap">
+                                            <i class="fa-solid fa-house-laptop"></i>
+                                            <p class="jobs-paragraph">{{ job.type }}</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="right-salary-wrapper">
+                                        <div class="jobs-salary-wrapper">{{ job.experience }}</div>
+                                        <a class="apply-btn" [routerLink]="['/job-detail', job.id]">Apply</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="recruit-wrapper" *ngIf="isRecruitVisible">
+            <div class="recruit-wrapper">
+                <div class="latest-jobs">
+                    <h3>We consistently recruit on these technologies</h3>
+                    <ul>
+                        <li>Angular</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            
+            <button (click)="toggleRecruit()" class="toggle-button">
+                {{ isRecruitVisible ? 'Hide' : 'Show' }} We consistently recruit on these technologies
+            </button> -->
+        
+
+
+            
+
+
+    </div>
+</section>
+
+
+<!-- Services Section -->
+
+<section class="services-wrapper" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="services-left-wrap">
+                    <div>
+                        <div class="services-title-wrap">
+                            <div class="subtitle">
+                                <span>Our Services</span>
+                                <h2>All Services</h2>
+                                <div class="content-wrap">
+                                    We offer innovative and tailored technology solutions to help businesses thrive in the digital era. From consulting and software development to UI/UX design, AI solutions, and project support, we deliver excellence with every service.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-list">
+                            <ul>
+                                <li><i class="fa-regular fa-circle-check"></i> Consulting and Outsourcing</li>
+                                <li><i class="fa-regular fa-circle-check"></i> Software Development</li>
+                                <li><i class="fa-regular fa-circle-check"></i> UI/UX Design</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa-regular fa-circle-check"></i> Training Programs</li>
+                                <li><i class="fa-regular fa-circle-check"></i> Project Support</li>
+                                <li><i class="fa-regular fa-circle-check"></i> Guidewire/SmartComm</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="btn text-white knw-btn">Know more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="services-column-wrap">
+                <div class="services-column">
+                    <div class="content-item">
+                        <div class="media-icon">
+                            <div class="icon-wrapper">
+                                <span>
+                                    <i class="fa-solid fa-users"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-details-group">
+                            <div class="content-title">
+                                <h5>Consulting and Outsourcing</h5>
+                            </div>
+                            <div class="content-desc">
+                                <p>We help businesses streamline operations by offering expert IT consulting and outsourcing solutions...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-column">
+                    <div class="content-item">
+                        <div class="media-icon">
+                            <div class="icon-wrapper">
+                                <span>
+                                    <i class="fa-solid fa-cloud"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-details-group">
+                            <div class="content-title">
+                                <h5>Software Development</h5>
+                            </div>
+                            <div class="content-desc">
+                                <p> We craft tailored software solutions that align with your business objectives...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-column">
+                    <div class="content-item">
+                        <div class="media-icon">
+                            <div class="icon-wrapper">
+                                <span>
+                                    <i class="fa-brands fa-figma"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-details-group">
+                            <div class="content-title">
+                                <h5>UI/UX Design</h5>
+                            </div>
+                            <div class="content-desc">
+                                <p>Our UI/UX design services focus on creating seamless...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-column">
+                    <div class="content-item">
+                        <div class="media-icon">
+                            <div class="icon-wrapper">
+                                <span>
+                                    <i class="fa-brands fa-leanpub"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-details-group">
+                            <div class="content-title">
+                                <h5>Training Programs</h5>
+                            </div>
+                            <div class="content-desc">
+                                <p> We provide specialized training sessions to equip professionals...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Join Our Section -->
+<div class="Join-our pT-5 pB-5" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+        <div class="Join-our_content">
+            <span class="fs-3 fw-bold">Join our growing global team and reach your full potential.</span>
+            <a routerLink="#" class="know-more-btn" data-aos="fade-right" data-aos-once="true"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                know more <i class="fa-solid fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section class="about-us-section position-relative" data-aos="zoom-in" data-aos-duration="1300">
+    <div class=" text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <h2 class="base-h1 text-white mb-4" data-aos="fade-right" data-aos-once="true"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="2000">About Us</h2>
+                    <div class="about-card" data-aos="fade-down" data-aos-once="true"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+
+                        <p>
+                            we specialize in consulting, software development, UI/UX design, web and app development, AI solutions, and project support. Our expert team focuses on innovation, quality, and customer satisfaction, ensuring tailored solutions for every business need. 
+                        </p>
+                        <br>
+                        <a routerLink="#" class="know-more-btn mt-5">know more
+                            <i class="fa-solid fa-arrow-right ms-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Solutions Section -->
+<section class="Industry-Sections" data-aos="flip-left" data-aos-duration="1400">
+    <div class="container-fluid">
+        <div class="Industry-title my-lg-5" data-aos="fade-down" data-aos-once="true"
+            data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+            <h1 class="base-h1 lt-blue-c">Intelligent Solutions for Every Sector</h1>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000">
+            <div class="col-sm-6 col-lg-3 pe-0 sm-pr-1">
+                <div class="industry-card industry-bg1">
+                    <h5 class="base-h5">Software <br> Developement</h5>
+                    <img src="assets/images/solution1.png" alt="img">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 px-lg-0">
+                <div class="industry-card industry-bg2">
+                    <h5 class="base-h5">Product <br> Development</h5>
+                    <img src="assets/images/solution2.png" alt="img">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 px-lg-0">
+                <div class="industry-card industry-bg3">
+                    <h5 class="base-h5">Software <br> consulting</h5>
+                    <img src="assets/images/solution3.png" alt="img">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 ps-lg-0">
+                <div class="industry-card industry-bg4">
+                    <h5 class="base-h5">Graphic <br> Design</h5>
+                    <img src="assets/images/solution4.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,168 @@
+/* You can add global styles to this file, and also import other style files */
+.mt-4-plus{
+    margin-top: 4.90rem;
+}
+.pT-5{
+    padding-top: 5rem;
+}
+.pB-5{
+    padding-bottom: 5rem;
+}
+.about-jobboard-wrapper {
+    z-index: 50;
+    grid-column-gap: 65px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.left-content-wrapper {
+    grid-row-gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+    display: flex;
+}
+.home-jobs-wrapper {
+    background: linear-gradient(165deg, #003569 38%, #68bdd9);
+    border: 1px solid #4a3a7680;
+    border-radius: 8px;
+    width: 35%;
+    min-height: 380px;
+    padding: 20px;
+    position: relative;
+}
+.wrapper-with-link {
+    border-bottom: 1px solid rgb(3 32 46 / 10%);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+.grey-title {
+    color: #012e5c;
+    border-bottom: 1px solid #ffffff1a;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-weight: 400;
+}
+.jobs-list-wrapper {
+    width: 100%;
+}
+.jobs-collection-wrap {
+    z-index: 500;
+    grid-row-gap: 20px;
+    flex-direction: column;
+    max-height: 340px;
+    display: flex;
+    overflow: hidden;
+}
+.right-jobs-collection-wrapper{
+    z-index: 50;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.job-slider {
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+}
+.job-track {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: scrollUp 10s linear infinite;
+    /* Add pause state */
+    animation-play-state: running;
+}
+.about-positon-wrapper {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-text-fill-color: inherit;
+    background-image: none;
+    background-clip: border-box;
+    border: 1px solid #4a3a7680;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 100px;
+    padding: 20px;
+    display: flex;
+    background: #012e5c;
+    color: #fff;
+}
+.position-wrap {
+    grid-row-gap: 15px;
+    flex-direction: column;
+    display: flex;
+}
+.location-type-wrapper {
+    grid-column-gap: 15px;
+    display: flex;
+}
+.location-item-wrap {
+    grid-column-gap: 8px;
+    justify-content: flex-start;
+    display: flex;
+}
+.right-salary-wrapper {
+    grid-row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.jobs-salary-wrapper {
+    grid-column-gap: 8px;
+    display: flex;
+}
+.apply-btn{
+    background: #fff;
+    padding: 4px 14px;
+    margin: 0;
+    color: #102441;
+    text-decoration: none;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+}
+.base-h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .lt-blue-c {
+    color: #0291cc!important;
+  }
+
+  @media (max-width: 767px) {
+    .about-jobboard-wrapper{
+        display: grid;
+    }
+    .left-content-wrapper, .home-jobs-wrapper{
+        width: 100%;
+    }
+    
+    
+  }
+
+  @media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 60% !important;
+    }
+    .modal{
+        z-index: 9999 !important;
+    }
+}
